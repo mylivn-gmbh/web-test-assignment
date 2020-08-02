@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+html, body {
+  height: 100vh;
+    overflow: auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+h4{
+  margin: 10px 0px;
+}
+img{
+  height: auto;
+    width: 100%;
+}
+/* Begin - Search Form */
+.search{
+  position: relative;
+  width: 100%;
+  padding: 12px 87px 12px 12px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 16px;
+  transition: 0.4s ease;
+}
+.search:focus{
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.btn-search{
+  height: 43px;
+  font-size: 16px;
+  position: absolute;
+  margin-left: -68px;
+  padding: 0 5px;
+  padding-top: 0px;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  background: rgba(128, 128, 128,0.2);
+  border: 0;
+  outline: 0;
+}
+
+/* margin-left: -68px; */
+/* End - Search Form */
+
+.container{
+  position: relative;
+    width: 100%;
+    height: 91%;
+    margin-top: 10px;
+}
+
+/* Begin - Slider */
+.article-slider{
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+      overflow: hidden;
+      text-align: center;
+}
+/* label:last-of-type {
+  display: none;
+} */
+
+.navigation {
+  position: relative;
+    z-index: 3;
+    padding: 10px;
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: inherit;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 2px 2px 0.5rem 2px;
+    cursor: pointer;
+}
+
+.navigation.disabled{display: none;}
+
+.navigation.selected{background: #21618C;color:white}
+
+.navigation.selected~label { display: none; }
+
+.navigation.selected+.slide { opacity: 1; z-index: 2; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  height: auto;/*inherit;*/
+  width: inherit;
+  background: #AED6F1;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s;
+  padding: 45px 10px 10px 10px;
+}
+/* End - Slider */
+
+/* Begin - Notification */
+.notification {
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+.notification span{
+  background-color: gray;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+}
+/* End - Notification */
