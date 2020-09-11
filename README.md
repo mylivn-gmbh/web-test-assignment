@@ -27,3 +27,6 @@
 - TS/JS/Flow
 - Any common reactive framework
 - Rss feed example: https://hnrss.org/newest
+
+### Submission
+After you finished your test assignment, please send us a link to download it to [talents@mylivn.com](talents@mylivn.com). Please do not put your solution to any publicly available place on the internet (like GitHub, BitBucket). Best way to share files with us is to put them to any private cloud storage and provide us a private link. 
